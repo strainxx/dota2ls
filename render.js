@@ -5,10 +5,6 @@ function ext(){
     window.close()
 }
 
-function settngs(){
-    window.resizeTo(-50, -50)
-}
-
 function toastthis(){
     var x = document.getElementById("toast");   
     x.className = "show";

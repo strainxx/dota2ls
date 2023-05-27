@@ -37,6 +37,14 @@ app.on('window-all-closed', () => {
 })
 console.log('Hello')
 
-function copygh(){
-    clipboard.writeText('https://github.com/strainxx')
+function copyText(text){
+    clipboard.writeText(text)
+}
+
+function readMemory(){
+    //Later
+}
+
+function getSteam(){
+    //Later
 }

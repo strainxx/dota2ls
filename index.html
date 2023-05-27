@@ -11,14 +11,14 @@
 <body>
     <div class="container">
         <div class="user">
-        <h1>PRIVET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h2 id="name">Dota Tools</h2>
         </div>
         <div class="cheats">
             <div class="topbtns">
-                <button class="button githubbtn", onclick="copygh(); toastthis()" type="button"><i class="ri-github-fill"></i></button></h1>
+                <button class="button githubbtn", onclick="copyText('https://github.com/strainxx/dota2ls'); toastthis()" type="button"><i class="ri-github-fill"></i></button></h1>
                 <button class="button settingsbtn", onclick="location.href='settings.html'" type="button"><i class="ri-settings-4-fill"></i></button></h1>
             </div>
-            <button class="btn-grad roshanbtn", onclick="settngs()"></button>
+            <button class="btn-grad", id="roshan" onclick="readMemory()">Get roshan hp</button>
             <div id="toast">Copied To Clipboard...</div>
         </div>
     </div>
