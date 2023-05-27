@@ -16,7 +16,7 @@ npm test (or electron .)
 
 ###### Or try to compile with electron packager
 
-## Used icons from ![remix](https://remixicon.com/img/logo/dark/text.svg)
+## Used icons from [![remix](https://remixicon.com/img/logo/dark/text.svg)][1]
 
 ## License
 
@@ -24,4 +24,4 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-[remix]: https://remixicon.com/
+[1]: https://remixicon.com
