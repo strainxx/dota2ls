@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns: 100%;
+    background-color: #ffffff;
+    grid-template-areas: "user";
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    background: white;
+}
+
+.cheats{
+    grid-area: cheats;
+    display: none;
+}
+
+.user{
+    grid-area: user;
+}
+
+@media (min-width: 300px){
+    .container{
+        grid-template-columns: 40% 60%;
+        grid-template-areas: "user cheats";
+    }
+    .cheats{
+        display: block;
+    }
+}
+
+.button{
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 1s;
+    background-color: rgb(72, 189, 173);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+.settingsbtn{
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+    float: right;
+    position: fixed;
+    right: 12%;
+    bottom: 75%;
+    transform: translateY(-30%);
+    background-color: rgb(72, 189, 173);
+}
+
+.githubbtn{
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    float: right;
+    right: 12%;
+    bottom: 82%;
+}
+
+.settingsbtn:hover{
+    background-color: rgb(179, 249, 246);
+    width: 100px;
+}
+
+.githubbtn:hover{
+    background-color: rgb(179, 249, 246);
+    width: 100px;
+}
+
+
+.button1:hover{
+    background-color: aquamarine;
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #61be7d 0%, #56B4D3  51%, #99e0ae  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
+#toast{
+    position: fixed;
+    bottom: 40%;
+    left: 35%;
+    color: #fff;
+    background-color:rgb(4, 4, 4);
+    visibility: hidden;
+    text-align: center;
+    opacity: 0%;
+}
+
+#toast.show{
+    visibility: visible;
+    opacity: 0%;
+    animation: showt 2s ease;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes showt {
+    from {bottom: 0; opacity: 0%;}
+    to {bottom: 30%; opacity: 70%;}
+}

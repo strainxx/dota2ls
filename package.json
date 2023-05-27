@@ -1,0 +1,25 @@
+{
+  "name": "dota2ls",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cls && electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strainxx/dota2ls.git"
+  },
+  "keywords": [
+    "dota"
+  ],
+  "author": "straineeq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strainxx/dota2ls/issues"
+  },
+  "homepage": "https://github.com/strainxx/dota2ls#readme",
+  "dependencies": {
+    "electron": "^24.2.0"
+  }
+}
