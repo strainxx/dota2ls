@@ -1,5 +1,7 @@
 # [WORK IN PROGRESS] Dota 2ls
-*Very simple but work*
+*idk why this is public repo but you can see progress of my stupid UI*
+
+This is my first project using electron js and i still work
 
 
 ## Running from source
