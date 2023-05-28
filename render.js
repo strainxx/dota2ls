@@ -1,8 +1,14 @@
+const { ipcRenderer } = require('electron')
+
 function _alert(){
     alert("NARUTO RAMEN")
 }
 function ext(){
     window.close()
+}
+
+function copyText(){
+    ipcRenderer.send('copygh')
 }
 
 function toastthis(){

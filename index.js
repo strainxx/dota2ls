@@ -1,6 +1,6 @@
 const path = require('path');
 const url = require('url');
-const {app, BrowserWindow, clipboard} = require('electron');
+const {app, BrowserWindow, clipboard, ipcMain} = require('electron');
 
 let win;
 
@@ -37,12 +37,12 @@ app.on('window-all-closed', () => {
 })
 console.log('Hello')
 
-function copyText(text){
-    clipboard.writeText(text)
-}
+ipcMain.on('copygh', (event, arg) => {
+    clipboard.writeText('https://github.com/strainxx/dota2ls')
+})
 
 function readMemory(){
-    //Later
+    win.setSize(100, 100)
 }
 
 function getSteam(){
