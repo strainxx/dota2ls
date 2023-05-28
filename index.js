@@ -1,8 +1,13 @@
 const path = require('path');
 const url = require('url');
 const {app, BrowserWindow, clipboard, ipcMain} = require('electron');
+const { Octokit } = require("@octokit/core");
 
 let win;
+
+const octokit = new Octokit({
+    auth: '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'
+})
 
 function createWindow() {
     win = new BrowserWindow({
@@ -38,13 +43,20 @@ app.on('window-all-closed', () => {
 console.log('Hello')
 
 ipcMain.on('copygh', (event, arg) => {
-    clipboard.writeText('https://github.com/strainxx/dota2ls')
+    clipboard.writeText('https://github.com/strainxx/dota2ls');
+})
+
+ipcMain.on('getStars', async (event, arg) => {
+    const repo = await octokit.request('GET /repos/{owner}/{repo}', {
+        owner: 'strainxx',
+        repo: 'dota2ls',
+        headers: {
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+    })
+    event.returnValue = repo.data.stargazers_count
 })
 
 function readMemory(){
-    win.setSize(100, 100)
-}
-
-function getSteam(){
-    //Later
+    win.setSize(100, 100);
 }
