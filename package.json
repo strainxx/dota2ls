@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/strainxx/dota2ls#readme",
   "dependencies": {
+    "@octokit/core": "^4.2.1",
     "electron": "^24.2.0"
   }
 }

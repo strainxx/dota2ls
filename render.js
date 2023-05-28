@@ -1,14 +1,29 @@
 const { ipcRenderer } = require('electron')
 
-function _alert(){
-    alert("NARUTO RAMEN")
-}
-function ext(){
-    window.close()
+let optimize = false;
+
+function addStars(type){
+    if (type){
+        document.getElementById('star').innerHTML = 
+        ` ${ipcRenderer.sendSync('getStars')}\
+        <i class="ri-star-fill"></i>`;
+    } else {
+        document.getElementById('star').innerHTML = '';
+    }
 }
 
 function copyText(){
-    ipcRenderer.send('copygh')
+    ipcRenderer.send('copygh');
+}
+
+function sumbit(){
+    if (document.getElementById('opt').checked){
+        optimize = true;
+        alert('YEs')
+    } else {
+        optimize = false;
+        alert('no')
+    }
 }
 
 function toastthis(){

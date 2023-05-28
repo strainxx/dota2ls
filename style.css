@@ -83,6 +83,7 @@ body{
     width: 25px;
     position: fixed;
     right: 12%;
+    text-align: center;
 }
 
 .settingsbtn{
@@ -92,6 +93,10 @@ body{
 .githubbtn{
     bottom: 81%;
 }
+
+/* .githubbtn:hover::after{
+    content: 'privet';
+} */
 
 .button:hover{
     background-color: rgb(179, 249, 246);

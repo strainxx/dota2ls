@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Settings</title>
+    <title>Dota 2 Tools | Settings</title>
 </head>
 <body>
-    <button id="back", onclick="location.href='index.html'"><i class="ri-arrow-left-circle-fill"></i></button>
+    <button id="back", onclick="location.href='index.html'; sumbit();"><i class="ri-arrow-left-circle-fill"></i></button>
+    <input type="checkbox" id="opt" value="optimize"> Optimize
+    <script src="render.js"></script>
+    <script>
+        if (optimise){
+            document.getElementById('opt').checked = true
+        }
+    </script>
 </body>
 </html>
