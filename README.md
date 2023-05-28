@@ -19,10 +19,10 @@ npm test (or electron .)
 ###### Or try to compile with electron packager
 
 ## Used icons from [![remix](https://remixicon.com/img/logo/dark/text.svg)][1]
-##TODO:
-###1.Make loading screen with installer
-###2.Finish UI
-###3.Compile
+## TODO:
+### 1.Make loading screen with installer
+### 2.Finish UI
+### 3.Compile
 
 ## License
 
